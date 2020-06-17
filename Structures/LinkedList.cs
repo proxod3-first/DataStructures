@@ -123,7 +123,6 @@ namespace DataStructures
 
 		IEnumerator IEnumerable.GetEnumerator() => ((IEnumerable)this).GetEnumerator();
 
-
 		public override string ToString()
 		{
 			return base.ToString();
