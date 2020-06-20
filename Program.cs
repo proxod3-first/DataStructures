@@ -11,6 +11,8 @@ namespace DataStructures
 			// NewStack<int> stack = new NewStack<int>();
 			// HashTable<int> hashTable = new HashTable<int>(size);
 			// NewDictionary<int, string> dict = new NewDictionary<int, string>(100);
+			// NewQueue<int> queue = new NewQueue<int>();
+			// NewQueueArray<int> queueArray = new NewQueueArray<int>(100);
 
 
 		}
@@ -21,7 +23,7 @@ namespace DataStructures
 		//{
 		//	foreach (var item in hashtable.items)
 		//	{
-		//		if (item.nodes.count != 0)
+		//		if (item.nodes.Сount != 0)
 		//		{
 		//			console.write(item.key + ": ");
 		//			foreach (var value in item.nodes)

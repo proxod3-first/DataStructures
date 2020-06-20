@@ -9,5 +9,10 @@
 		{
 			Data = data;
 		}
+
+		public override string ToString()
+		{
+			return Data.ToString();
+		}
 	}
 }
