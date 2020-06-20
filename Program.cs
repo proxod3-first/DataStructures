@@ -1,4 +1,7 @@
-﻿namespace DataStructures
+﻿using DataStructures.Structures;
+using DataStructures.Structures.Elements;
+
+namespace DataStructures
 {
 	class Program
 	{
@@ -7,6 +10,7 @@
 			// LinkedList<int> list = new LinkedList<int>();
 			// NewStack<int> stack = new NewStack<int>();
 			// HashTable<int> hashTable = new HashTable<int>(size);
+			// NewDictionary<int, string> dict = new NewDictionary<int, string>(100);
 
 
 		}
