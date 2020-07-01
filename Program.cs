@@ -1,5 +1,6 @@
 ﻿using DataStructures.Structures;
 using DataStructures.Structures.Elements;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataStructures
 {
@@ -13,24 +14,25 @@ namespace DataStructures
 			// NewDictionary<int, string> dict = new NewDictionary<int, string>(100);
 			// NewQueue<int> queue = new NewQueue<int>();
 			// NewQueueArray<int> queueArray = new NewQueueArray<int>(100);
-
+			// BinaryTree<int> binaryTree = new BinaryTree<int>();
+			
 
 		}
 
 
 		#region Print Hashtable	
-		//public static void printhashtable<t>(hashtable<t> hashtable)
+		//public static void PrintHashTable<t>(HashTable<t> hashTable)
 		//{
-		//	foreach (var item in hashtable.items)
+		//	foreach (var item in hashTable.Items)
 		//	{
-		//		if (item.nodes.Сount != 0)
+		//		if (item.Nodes.Сount != 0)
 		//		{
-		//			console.write(item.key + ": ");
-		//			foreach (var value in item.nodes)
+		//			Console.Write(item.key + ": ");
+		//			foreach (var value in item.Nodes)
 		//			{
-		//				console.write(value + " ");
+		//				Console.Write(value + " ");
 		//			}
-		//			console.writeline();
+		//			Console.Writeline();
 		//		}
 		//	}
 		//}
