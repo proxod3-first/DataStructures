@@ -15,12 +15,14 @@ namespace DataStructures
 			// NewQueueArray<int> queueArray = new NewQueueArray<int>(100);
 			// BinaryTree<int> binaryTree = new BinaryTree<int>();
 			// PrefixTree<int> prefixTree = new PrefixTree<int>();
+			// SimpleHeap heap = new SimpleHeap();
+			// Graph graph = new Graph();
 
 
 		}
 
 		#region Print HashTable
-		public static void PrintHashTable<t>(HashTable<t> hashTable)
+		public static void PrintHashTable<T>(HashTable<T> hashTable)
 		{
 			foreach (var item in hashTable.Items)
 			{
