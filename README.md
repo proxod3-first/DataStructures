@@ -10,3 +10,6 @@ I realized Data structures:
   7. Heap
   8. Graph
   9. Trie
+  10. DoublyLinkedList
+  11. Deque
+  12. Set
