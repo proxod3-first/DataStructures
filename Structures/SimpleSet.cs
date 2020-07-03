@@ -37,16 +37,14 @@ namespace DataStructures.Structures
 
 		public void Remove(T item)
 		{
-			// TODO: А если его нет без проверки?
-			if (Contains(item))
-				items.Remove(item);
+			items.Remove(item);
 		}
 
 		public SimpleSet<T> Union(SimpleSet<T> otherSet)
 		{
 			// [1,2,3] union [2,4] = [1,2,3,4]
 
-			//return new SimpleSet<T>(items.Union(otherSet.items));
+			// return new SimpleSet<T>(items.Union(otherSet.items));
 
 			SimpleSet<T> newSetResult = new SimpleSet<T>();
 
