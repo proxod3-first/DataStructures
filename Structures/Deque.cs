@@ -18,9 +18,9 @@ namespace DataStructures.Structures
             SetHead(data);
         }
 
-        public T First => IsEmpty ? head.Data : throw new InvalidOperationException();
+        public T Front() => !IsEmpty ? head.Data : throw new InvalidOperationException();
 
-        public T Last => IsEmpty ? tail.Data : throw new InvalidOperationException();
+        public T Back() => !IsEmpty ? tail.Data : throw new InvalidOperationException();
 
         private void SetHead(T data)
         {
@@ -52,7 +52,7 @@ namespace DataStructures.Structures
 
         public void PushBack(T data)
         {
-            if (Count == 0)
+            if (IsEmpty)
             {
                 SetHead(data);
                 return;
@@ -67,7 +67,7 @@ namespace DataStructures.Structures
 
         public void PushFront(T data)
         {
-            if (Count == 0)
+            if (IsEmpty)
             {
                 SetHead(data);
                 return;
@@ -107,10 +107,6 @@ namespace DataStructures.Structures
             }
             return default(T);
         }
-
-        public T PeekBack() => tail.Data;
-
-        public T PeekFront() => head.Data;
 
         IEnumerator IEnumerable.GetEnumerator() => ((IEnumerable)this).GetEnumerator();
 

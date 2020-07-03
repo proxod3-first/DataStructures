@@ -13,6 +13,8 @@ namespace DataStructures.Structures
 
 		public int Count { get; private set; }
 
+		public bool IsEmpty => Count == 0;
+
 		public NewQueueArray(int size)
 		{
 			if (size <= 0)
@@ -26,14 +28,14 @@ namespace DataStructures.Structures
 		{
 			if (Count < Size)
 			{
-				var result = new T[Size];
-				result[0] = data;
+				var buffer = new T[Size];
+				buffer[0] = data;
 				for (int i = 0; i < Count; i++)
 				{
-					result[i + 1] = items[i];
+					buffer[i + 1] = items[i];
 				}
 
-				items = result;
+				items = buffer;
 				Count++;
 			}
 			else
@@ -49,7 +51,7 @@ namespace DataStructures.Structures
 			return item;
 		}
 
-		public T Peek() => Head;
+		public T Peek() => !IsEmpty ? Head : throw new InvalidOperationException();
 
 		public IEnumerator GetEnumerator()
 		{

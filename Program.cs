@@ -1,5 +1,6 @@
 ﻿using DataStructures.Structures;
 using System;
+using System.Collections.Generic;
 
 namespace DataStructures
 {
@@ -18,8 +19,8 @@ namespace DataStructures
 			// SimpleHeap heap = new SimpleHeap();
 			// Graph graph = new Graph();
 			// DoublyLinkedList<int> doublyList = new DoublyLinkedList<int>();
-			// SetArray set = new SetArray();
 			// Deque<int> deque = new Deque<int>();
+			// SimpleSet<int> set = new SimpleSet<int>();
 
 
 		}
